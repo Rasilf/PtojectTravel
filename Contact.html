@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="C:\Users\DELL\OneDrive\Desktop\ProjectHTML\css.css">
+</head>
+
+
+<body>
+
+<!-- القائمة -->
+<ul class="navbar">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="Italy.html">Italy</a></li>
+  <li><a href="Japan.html">Japan</a></li>
+  <li><a href="Spain.html">Spain</a></li>
+  <li><a href="USA.html">USA</a></li>
+  <li><a href="Canada.html">Canada</a></li>
+  <li><a href="Contact.html">Contact Us</a></li>
+</ul>
+
+<!-- 
+هذا البادنق علشان الكلام ما يكون لاصق بحواف الصفحة
+واستخدمته بعد القائمة علشان ما تتأثر من البادنق ويخرب شكلها
+ -->
+<div class="marpad">
+
+<!-- زر لتغيير لون القائمة -->
+<button onclick="toggleMode()">🌙 / 🌞 Toggle Mode</button>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+
+
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\المحتوى\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+<br><br>
+<h1>Let's Stay Connected ✈️</h1>
+<br>
+<p>
+Have questions, suggestions, or travel stories to share?
+Send us a message and we’ll be happy to hear from you.
+</p>
+<br><br>
+
+<!-- استخدمت حقت لاب ٥، نسخت ولصقت....  -->
+<div class="padding">
+    <form style="background-color:#f9f6f3; padding: 25px; border: 2px solid #3E4A61; border-radius: 12px;">
+        <fieldset>
+            <legend> Detailed Inquiry Form </legend>
+            <br>
+
+            <label for="username">Full Name:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your name(Letters only)" pattern="[A-Za-z\s]+" title="Please use letters only" required>
+            <br><br>
+
+            <label for="useremail">Email Address:</label><br>
+            <input type="email" id="useremail" name="useremail" placeholder="username@example.com" required>
+            <br><br>
+
+            <label><strong>1. Who is this question for?</strong></label><br>
+            <input type="radio" name="target" value="Student1" id="s1" required> <label for="s1">Traveler 1 (Italy Trip)</label><br>
+            <input type="radio" name="target" value="Student2" id="s2"> <label for="s2">Traveler 2 (Japan Trip)</label><br>
+            <input type="radio" name="target" value="Student3" id="s3"> <label for="s3">Traveler 3 (Spain Trip)</label><br>
+            <input type="radio" name="target" value="Student4" id="s4"> <label for="s4">Traveler 4 (USA Trip)</label><br>
+            <input type="radio" name="target" value="Student5" id="s5"> <label for="s5">Traveler 5 (Canada Trip)</label>
+            <br><br>
+
+            <label><strong>2. Reason for Contact (You can select more than one):</strong></label><br>
+            <input type="checkbox" id="c1" name="reason" value="Inquiry"> <label for="c1">General Inquiry</label><br>
+            <input type="checkbox" id="c2" name="reason" value="Suggestion"> <label for="c2">Travel Suggestion</label><br>
+            <input type="checkbox" id="c3" name="reason" value="Collaboration"> <label for="c3">Collaboration / Feedback</label><br>
+            <input type="checkbox" id="c4" name="reason" value="Help"> <label for="c4">Asking for Travel Tips</label>
+            <br><br>
+
+            <label for="msg">Feel Free To Share :</label><br>
+            <textarea id="msg" name="message" placeholder="Write your message here..." rows="6" style="width: 100%;" required></textarea>
+            <br><br>
+
+            <input type="reset" value="Reset All" style="padding: 10px; border-radius: 5px;">
+            <input type="submit" value="Send Inquiry" style="padding: 10px 20px; background-color: #3E4A61; color: white; border: none; border-radius: 5px;">
+        </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>

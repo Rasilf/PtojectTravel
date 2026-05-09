@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="css.css">
+
+<style>
+
+#bodyImg{
+background-image: url(Body.jpg");
+background-size: cover;
+}
+p , h1 {
+color : white;
+text-align:center;
+}
+</style>
+</head>
+
+<!-- id bodyy 
+يحتوي على الخلفيّة -->
+<body id="bodyImg">
+
+
+<!-- الشريط -->
+<ul class="navbar">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="Italy.html">Italy</a></li>
+  <li><a href="Japan.html">Japan</a></li>
+  <li><a href="Spain.html">Spain</a></li>
+  <li><a href="USA.html">USA</a></li>
+  <li><a href="Canada.html">Canada</a></li>
+  <li><a href="Contact.html">Contact Us</a></li>
+</ul>
+
+
+<!-- زر لتغيير لون القائمة -->
+<button onclick="toggleMode()">🌙 / 🌞 Toggle Mode</button>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+<script>
+/*من محاضرة اليوم
+تنقلنا لصفحة About 
+بعد ١٠ ثواني*/
+function redirect() {
+window.location="About.html";
+}
+setTimeout ('redirect() ',10000);
+
+</script>
+
+
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\المحتوى\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="welcome"><em>Welcome To Our Website</em></h1>
+<p class="welcome" style="font-size: 22px;">In this website, you'll travel from wherever you are..</p>
+<p class="welcome" style="font-size: 15px;">You will be redirected to Abous Us page in 10 sec.</p>
+
+
+
+
+</body>
+</html>
